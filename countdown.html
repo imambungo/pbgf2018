@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  @font-face {
+    font-family: fjudul;
+    src: url(judulbgf.otf);
+  }
+  @media all and (max-width: 430px){
+    .pucuk{
+      padding-top: 12vw;
+    }
+  }
+  @media all and (max-width: 650px){
+    body{
+      /* background-color: #b36b00; */
+      background-image: url('nyimakas.png');
+      background-size:cover;
+    }
+    #demo {background-color: inherit;
+      text-align: center;
+      font-size: 13vw;
+    }
+    #waktu{
+      text-align: center;
+    }
+    .pucuk{
+      font-family: sans-serif;
+      margin-top:10vw;
+      text-align:center;
+      margin-right: 28vw;
+      font-size:3.8vw;
+    }
+    .judul{
+      font-family: fjudul;
+      color: gold;
+      text-align:center;
+      font-size:12vw;
+    }
+    .fasilkom{
+      font-family: fjudul;
+      text-align: center;
+      margin-bottom:7vw;
+      font-size:8vw;
+      margin-left: 42vw;
+    }
+    .waktu{
+      font-size: 2.8vw;
+      font-family: sans-serif;
+    }
+    .loader {
+      border: 0.6vw solid white;
+      border-radius: 50%;
+      border-top: 0.6vw solid transparent;
+      border-bottom: 0.6vw solid transparent;
+      width: 10vw;
+      margin:auto;
+      height: 10vw;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .incoming{
+      font-family: sans-serif;
+      text-align:center;
+      margin-top:6vw;
+      margin-bottom:4vw;
+      font-size:4.4vw;
+    }
+    .pendaftaran{
+      font-family: sans-serif;
+      text-align:center;
+      margin-bottom:3vw;
+      font-size:3.5vw;
+    }
+    .day{
+      margin-right:9vw;
+      margin-left:2vw;
+    }
+    .hour{
+      margin-left:5vw;
+      margin-right:5vw;
+    }
+    .minute{
+      margin-left:6vw;
+      margin-right:4vw;
+    }
+    .second{
+      margin-left:5vw
+    }
+  }
+  @media all and (min-width: 650px){
+    body{
+      /* background-color: chocolate; */
+      background-image: url('nyimakas.png');
+      background-size:cover;
+    }
+    #demo {background-color: inherit;
+      text-align: center;
+      font-size: 100px;
+    }
+    #waktu{
+      text-align: center;
+    }
+    .waktu{
+      font-size: 20px;
+      font-family: sans-serif;
+      padding-bottom: 20px;
+    }
+    .loader {
+      border: 4px solid transparent;
+      border-radius: 50%;
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      width: 80px;
+      margin:auto;
+      height: 80px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .pucuk{
+      font-family: sans-serif;
+      margin-top:20px;
+      text-align:center;
+      margin-right: 230px;
+      font-size:30px;
+    }
+    .judul{
+      font-family: fjudul;
+      color: gold;
+      text-align:center;
+      font-size:100px;
+    }
+    .fasilkom{
+      font-family: fjudul;
+      text-align: center;
+      margin-bottom:2px;
+      font-size:70px;
+      margin-left: 350px;
+    }
+    .incoming{
+      font-family: sans-serif;
+      text-align:center;
+      margin-top:27px;
+      margin-bottom:33px;
+      font-size:30px;
+    }
+    .pendaftaran{
+      font-family: sans-serif;
+      text-align:center;
+      margin-bottom:5px;
+      font-size:19px;
+    }
+    .day{
+      margin-right:67px;
+      margin-left:20px;
+    }
+    .hour{
+      margin-left:40px;
+      margin-right:40px;
+    }
+    .minute{
+      margin-left:61px;
+      margin-right:40px;
+    }
+    .second{
+      margin-left:40px;
+    }
+  }
+</style>
+</head>
+<body style="color:white;overflow:auto;">
+  <div class="pucuk">
+    PENDAFTARAN
+  </div>
+  <div class="judul">
+    Bujang Gadis
+  </div>
+  <div class="fasilkom">
+    Fasilkom
+  </div>
+  <div class="loader"></div>
+  <div class="incoming">
+    Coming Soon!
+  </div>
+  <div class="pendaftaran">
+    Pendaftaran akan dibuka dalam:
+  </div>
+  <div id="demo"></div>
+  <div id="waktu">
+    <span class="waktu day">DAYS</span>
+    <span class="waktu hour">HOURS</span>
+    <span class="waktu minute">MINUTES</span>
+    <span class="waktu second">SECONDS</span>
+  </div>
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("march 1, 2018 08:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = ('0' + days).slice(-2) + " : " + ('0' + hours).slice(-2) + " : "
+    + ('0' + minutes).slice(-2) + " : " + ('0' + seconds).slice(-2);
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
+</body>
+</html>
