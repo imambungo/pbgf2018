@@ -5,19 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body style="color:white;overflow:auto;">
-  <!-- <div class="pucuk">
-    PENDAFTARAN
-  </div>
-  <div class="judul">
-    Bujang Gadis
-  </div>
-  <div class="fasilkom">
-    Fasilkom
-  </div> -->
-  <img class="wow" src="2.png" alt="Pendaftaran Bujang Gadis Fasilkom">
-  <div class="loader"></div>
-  <div class="incoming">
-    Coming Soon!
+  <div class="diamon">
+    <div class="setloader"></div>
+    <div class="loader"></div><br>
+    <img class="incoming" src="incoming.png" alt="Coming soon">
   </div>
   <div class="pendaftaran">
     Pendaftaran akan dibuka dalam:
@@ -33,34 +24,34 @@
     © 2018 All Rights Reserved | BEM KM FASILKOM 2018
   </p>
   <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("march 1, 2018 08:00:00").getTime();
+    // Set the date we're counting down to
+    var countDownDate = new Date("march 1, 2018 08:00:00").getTime();
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-    // Get todays date and time
-    var now = new Date().getTime();
+      // Get todays date and time
+      var now = new Date().getTime();
 
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = ('0' + days).slice(-2) + " : " + ('0' + hours).slice(-2) + " : "
-    + ('0' + minutes).slice(-2) + " : " + ('0' + seconds).slice(-2);
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = ('0' + days).slice(-2) + " : " + ('0' + hours).slice(-2) + " : "
+      + ('0' + minutes).slice(-2) + " : " + ('0' + seconds).slice(-2);
 
-    // If the count down is over, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-</script>
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
