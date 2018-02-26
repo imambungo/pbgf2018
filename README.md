@@ -23,4 +23,7 @@ v1.411
 -Fixed README.md look
 
 v1.5  
--prevent Â© in neocities.org by changing © to (&# 169;)
+-Prevent Â© in neocities.org by changing © to (&# 169;)
+
+v1.6  
+-Changed image size to smaller one
