@@ -2,26 +2,22 @@
 
 CHANGELOG:
 
-<<<<<<< HEAD
 v1.3  
-=======
-v1.3
->>>>>>> cd8a904159ee6397797dccfcafdb3125231ad7f5
 -Full view in desktop (no scroll)  
 -New added coming soon image  
 -Loader in front of diamond image  
--fixed loader position  
--fixed some responsive problem  
--fixed some minor bugs  
+-Fixed loader position  
+-Fixed some responsive problem  
+-Fixed some minor bugs
 
 v1.4  
--changed countdown font to roboto  
--cleaned some unused code  
--removed "Pendaftaran akan dibuka dalam:" text  
+-Changed countdown font to roboto  
+-Cleaned some unused code  
+-Removed "Pendaftaran akan dibuka dalam:" text  
+-Added page title
 
-<<<<<<< HEAD
 v1.41  
-=======
-v1.41
->>>>>>> cd8a904159ee6397797dccfcafdb3125231ad7f5
--fixed README.md look by ensure that each line ends with two spaces  
+-Fixed README.md look by ensure that each line ends with two spaces
+
+v1.411  
+-Fixed README.md look
