@@ -21,3 +21,6 @@ v1.41
 
 v1.411  
 -Fixed README.md look
+
+v1.5  
+-prevent Â© in neocities.org by changing © to (&# 169;)
