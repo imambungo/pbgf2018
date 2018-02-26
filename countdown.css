@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Light.ttf);
+  }
 .incoming{
   width: 45%;
   display: block;
@@ -23,6 +27,7 @@
   background-position:top;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
 }
 @media all and (max-width: 580px){
   .diamon{
@@ -42,16 +47,10 @@
   #demo {background-color: inherit;
     text-align: center;
     font-size: 13vw;
+    font-family: 'Roboto';
   }
   #waktu{
     text-align: center;
-  }
-  .fasilkom{
-    font-family: fjudul;
-    text-align: center;
-    margin-bottom:7vw;
-    font-size:8vw;
-    margin-left: 42vw;
   }
   .waktu{
     font-size: 2.8vw;
@@ -87,7 +86,7 @@
   }
   .day{
     margin-right:9vw;
-    margin-left:2vw;
+    margin-left:2.6vw;
   }
   .hour{
     margin-left:5vw;
@@ -117,6 +116,7 @@
   #demo {background-color: inherit;
     text-align: center;
     font-size: 70px;
+    font-family: 'Roboto';
   }
   #waktu{
     text-align: center;
@@ -144,32 +144,19 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  .fasilkom{
-    font-family: fjudul;
-    text-align: center;
-    margin-bottom:2px;
-    font-size:70px;
-    margin-left: 350px;
-  }
-  .pendaftaran{
-    font-family: sans-serif;
-    text-align:center;
-    margin-bottom:5px;
-    font-size:17.7px;
-  }
   .day{
-    margin-right:29px;
-    margin-left:14px;
+    margin-right:25px;
+    margin-left:18px;
   }
   .hour{
-    margin-left:46px;
-    margin-right:39px;
+    margin-left:48px;
+    margin-right:37px;
   }
   .minute{
-    margin-left:21.35px;
-    margin-right:14px;
+    margin-left:25.35px;
+    margin-right:10px;
   }
   .second{
-    margin-left:35px;
+    margin-left:42px;
   }
 }
