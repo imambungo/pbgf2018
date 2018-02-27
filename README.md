@@ -23,7 +23,13 @@ v1.411
 -Fixed README.md look
 
 v1.5  
--Prevent Â© in neocities.org by changing © to (&# 169;)
+-Prevent Â© in neocities.org by changing © to &amp;#169;
 
 v1.6  
 -Changed image size to smaller one
+
+v1.6.2  
+-Separated javascript from html file
+
+v1.6.3  
+-Succesfully write &amp;#169; instead of (&# 169;) in README.md file
