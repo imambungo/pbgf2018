@@ -35,3 +35,6 @@ v1.6.2
 
 v1.6.3  
 -Succesfully write &amp;#169; instead of (&# 169;) in README.md file
+
+v1.7  
+-Fixed "HOURS" position
